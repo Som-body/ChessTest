@@ -1,19 +1,17 @@
 package com.beginner.chesstest;
 
-import android.content.Intent;
+import android.app.Activity;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private static final int STOPSPLASH = 0;
     //time in milliseconds
-    private static final long SPLASHTIME = 3000;
+    private static final long SPLASHTIME = 10000;
 
     private ImageView splash;
 
@@ -39,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
-        splash = (ImageView) findViewById(R.id.splash);
+        splash = (ImageView) findViewById(R.id.splashscreen);
         Message msg = new Message();
         msg.what = STOPSPLASH;
         splashHandler.sendMessageDelayed(msg, SPLASHTIME);
