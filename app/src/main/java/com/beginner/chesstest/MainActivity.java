@@ -1,6 +1,7 @@
 package com.beginner.chesstest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -41,6 +42,11 @@ public class MainActivity extends Activity {
         Message msg = new Message();
         msg.what = STOPSPLASH;
         splashHandler.sendMessageDelayed(msg, SPLASHTIME);
+    }
+
+    public void play(View view) {
+        Intent intent  = new Intent(this, SinglePlayer.class);
+        startActivity(intent);
     }
 }
 

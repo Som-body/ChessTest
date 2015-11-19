@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+            <solid android:color="@color/black" />
+        </shape>
+    </item>
+
+    <item
+        android:right="15dp"
+        android:left="15dp"
+        android:top="75dp"
+        android:bottom="5dp">
+        <rotate
+            android:fromDegrees="0">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:right="30dp"
+        android:left="50dp"
+        android:top="40dp"
+        android:bottom="15dp">
+        <rotate
+            android:fromDegrees="-30">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:right="50dp"
+        android:left="30dp"
+        android:top="40dp"
+        android:bottom="15dp">
+        <rotate
+            android:fromDegrees="30">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:right="40dp"
+        android:left="40dp"
+        android:top="38dp"
+        android:bottom="15dp">
+        <rotate
+            android:fromDegrees="0">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:right="35dp"
+        android:left="35dp"
+        android:top="10dp"
+        android:bottom="60dp">
+        <rotate
+            android:fromDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:right="45dp"
+        android:left="50dp"
+        android:top="8dp"
+        android:bottom="80dp">
+        <rotate
+            android:fromDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/black" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

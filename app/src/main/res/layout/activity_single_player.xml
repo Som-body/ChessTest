@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beginner.chesstest.SinglePlayer">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:context="com.beginner.chesstest.SinglePlayer">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_rook"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_knight"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_bishop"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_queen"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_king"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_bishop"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_knight"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_rook"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/black_on_white_pawn"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_black"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/empty_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_pawn"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_pawn"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:context="com.beginner.chesstest.SinglePlayer">
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile0_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_rook"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile1_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_knight"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile2_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_bishop"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile3_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_queen"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile4_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_king"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile5_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_bishop"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile6_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_black_knight"/>
+
+            <com.beginner.chesstest.SquareImageView android:id="@+id/tile7_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="move"
+                android:src="@drawable/white_on_white_rook"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
